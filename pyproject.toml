@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cfc-mlx"
+version = "0.1.0"
+description = "Closed-form Continuous-time (CfC) neural networks with NCP wiring for Apple MLX"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [
+    {name = "j8ck"},
+]
+dependencies = [
+    "mlx>=0.20.0",
+    "numpy>=1.24.0",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7.0"]
+
+[project.urls]
+Repository = "https://github.com/j8ck/cfc-mlx"
